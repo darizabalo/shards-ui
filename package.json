@@ -27,15 +27,8 @@
     "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
     "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
     "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
-    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\"",
-    "bundlesize": "bundlesize"
+    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\""
   },
-  "bundlesize": [
-    {
-      "path": "./dist/css/shards.min.css",
-      "maxSize": "14.5 kB"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DesignRevision/shards-ui"
@@ -57,7 +50,6 @@
     "autoprefixer": "^7.2.6",
     "bootstrap-datepicker": "^1.8.0",
     "browser-sync": "^2.26.7",
-    "bundlesize": "^0.18.0",
     "clean-css-cli": "^4.1.11",
     "copyfiles": "^1.2.0",
     "node-sass": "^4.9.3",
